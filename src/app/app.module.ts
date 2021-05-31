@@ -10,6 +10,10 @@ import { ItemCardComponent } from './item-card/item-card.component';
 import { MatCardModule } from '@angular/material/card';
 import { HomeComponent } from './pages/home/home.component';
 
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +25,13 @@ import { HomeComponent } from './pages/home/home.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+<<<<<<< HEAD
+    MatToolbarModule,
+    MatIconModule,
+    MatButtonModule
+=======
     MatCardModule
+>>>>>>> c93217053779d0a07229a721923f980c8a7935ad
   ],
   providers: [],
   bootstrap: [AppComponent]
