@@ -14,13 +14,23 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatInputModule } from '@angular/material/input';
+import { StoreComponent } from './pages/store/store.component';
+import { ProductlistComponent } from './pages/store/productlist/productlist.component';
+import { ProductitemComponent } from './pages/store/productlist/productitem/productitem.component';
+import { CartComponent } from './pages/cart/cart.component';
+import { AccountComponent } from './pages/account/account.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     ItemCardComponent,
-    HomeComponent
+    HomeComponent,
+    StoreComponent,
+    ProductlistComponent,
+    ProductitemComponent,
+    CartComponent,
+    AccountComponent
   ],
   imports: [
     BrowserModule,
