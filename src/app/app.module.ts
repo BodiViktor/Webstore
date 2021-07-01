@@ -7,8 +7,6 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { HomeComponent } from './pages/home/home.component';
-import { ItemCardComponent } from './item-card/item-card.component';
-
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
@@ -24,7 +22,6 @@ import { AccountComponent } from './pages/account/account.component';
   declarations: [
     AppComponent,
     NavbarComponent,
-    ItemCardComponent,
     HomeComponent,
     StoreComponent,
     ProductlistComponent,
