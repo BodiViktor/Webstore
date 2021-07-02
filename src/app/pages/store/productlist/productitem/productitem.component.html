@@ -1,1 +1,9 @@
-<p>productitem works!</p>
+<mat-card *ngIf="item">
+  <mat-card-content>
+    <mat-card class="img">{{item.img}}</mat-card>
+  </mat-card-content>
+  <mat-card-header>
+    <mat-card-title>{{item.name}}</mat-card-title>
+    <mat-card-subtitle>{{item.price}} Ft</mat-card-subtitle>
+  </mat-card-header>
+</mat-card>
