@@ -1,10 +1,30 @@
-<mat-card>
-  <div [ngSwitch]="category">
-    <div *ngSwitchCase="'item'" class="container">
-      <app-productitem *ngFor="let item of items;" [item]="item"></app-productitem>
-    </div>
-    <div *ngSwitchDefault class="container">
-      <app-productlist></app-productlist>
-    </div>
-  </div>
-</mat-card>
+<span [ngSwitch]="page">
+  <span *ngSwitchCase="'home'" class="container">
+    <span [ngSwitch]="category">
+      <span *ngSwitchCase="'case'" class="container">
+        <app-productlist *ngFor="let item of items;" [item]="item" appOnHover></app-productlist>
+      </span>
+      <span *ngSwitchCase="'powerbank'" class="container">
+
+      </span>
+      <span *ngSwitchCase="'mug'" class="container">
+
+      </span>
+      <span *ngSwitchDefault class="container">
+        <app-home></app-home>
+      </span>
+    </span>
+  </span>
+
+  <span *ngSwitchCase="'registration'" class="container">
+    <!--login -->
+  </span>
+
+  <span *ngSwitchCase="'details'" class="container">
+
+  </span>
+
+  <span *ngSwitchDefault class="container">
+    <!-- login -->
+  </span>
+</span>
