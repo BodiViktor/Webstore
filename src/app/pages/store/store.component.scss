@@ -3,11 +3,14 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
   padding: 16px;
+  padding-left: 50px;
 }
 
-app-productitem {
-  min-width: 200px;
-  min-height: 200px;
+app-productlist {
+  min-width: 300px;
+  max-width: 300px;
+  min-height: 300px;
   flex: 1;
   margin: 4px;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }

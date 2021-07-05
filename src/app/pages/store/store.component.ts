@@ -9,11 +9,11 @@ import { ITEMS } from 'src/app/shared/database/item.database';
 export class StoreComponent implements OnInit, OnDestroy {
   items = ITEMS;
   category?= '';
-  constructor() {
-  }
+  page?= '';
+  constructor() { }
 
   ngOnInit(): void {
-    this.category = 'item'
+    this.category = 'page'
   }
   ngOnDestroy(): void {
     delete this.category;
