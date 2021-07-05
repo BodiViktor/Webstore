@@ -36,5 +36,4 @@ export const ITEMS: Item[] = [
     description: 'Standard fekete powerbank2',
     img: 'https://s3-ap-southeast-2.amazonaws.com/wc-prod-pim/JPEG_1000x1000/COPB02BK_keji_2000mah_powerbank_black.jpg'
   }
-
 ];
