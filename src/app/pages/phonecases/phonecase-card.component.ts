@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Item } from 'src/app/shared/models/items/items.model';
+import { Case } from 'src/app/shared/models/case.model';
 
 @Component({
   selector: 'app-phonecase-card',
@@ -7,8 +7,8 @@ import { Item } from 'src/app/shared/models/items/items.model';
   styleUrls: ['./phonecase-card.component.scss']
 })
 export class PhonecaseCardComponent implements OnInit {
-  @Input() item?: Item;
-  @Input() randitem?: Item;
+  @Input() case?: Case;
+  @Input() randcase?: Case;
 
   constructor() { }
 

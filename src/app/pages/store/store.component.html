@@ -1,32 +1,33 @@
 <span [ngSwitch]="page">
-  <span *ngSwitchCase="'home'" class="container">
+  <span *ngSwitchCase="'store'">
+    <app-navbar [categories]="categories"></app-navbar>
     <span [ngSwitch]="category">
       <span *ngSwitchCase="'case'" class="container">
-        <app-phonecase-card *ngFor="let item of items;" [item]="item" appOnHover></app-phonecase-card>
+        <app-phonecase-card *ngFor="let case of cases;" [case]="case" appOnHover></app-phonecase-card>
       </span>
       <span *ngSwitchCase="'powerbank'" class="container">
-        <app-powerbank-card></app-powerbank-card>
+        <app-powerbank-card *ngFor="let powerbank of powerbanks;" [powerbank]="powerbank" appOnHover>
+        </app-powerbank-card>
       </span>
       <span *ngSwitchCase="'mug'" class="container">
         <app-others-card></app-others-card>
       </span>
       <span *ngSwitchDefault class="container">
-        <app-home></app-home>
+        <app-splash-screen [categories]="categories"></app-splash-screen>
       </span>
     </span>
   </span>
 
-  <span *ngSwitchCase="'account'" class="container">
+  <span *ngSwitchCase="'account'">
     <app-account></app-account>
   </span>
 
-  <span *ngSwitchCase="'registration'" class="container">
+  <span *ngSwitchCase="'registration'">
     <app-registration></app-registration>
   </span>
 
 
-
-  <span *ngSwitchDefault class="container">
+  <span *ngSwitchDefault>
     <app-login></app-login>
   </span>
 </span>

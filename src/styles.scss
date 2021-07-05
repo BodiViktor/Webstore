@@ -5,10 +5,38 @@
 html,
 body {
   height: 100%;
+  background-color: rgb(180, 180, 180, 1);
 }
 
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
-  background-color: rgb(180, 180, 180, 1);
+}
+
+.max-width {
+  width: 100%;
+}
+
+.centering {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: stretch;
+}
+
+.log-card,
+.reg-card {
+  width: 100vw;
+  height: 100vh;
+}
+
+
+@media (min-width: 768px) {
+
+  .log-card,
+  .reg-card {
+    max-width: 33em;
+    min-height: 40em;
+    height: auto;
+  }
 }

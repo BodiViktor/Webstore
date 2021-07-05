@@ -1,1 +1,13 @@
-<p>powerbank-card works!</p>
+<mat-card *ngIf="powerbank">
+  <mat-card-header>
+    <mat-card-title>{{powerbank.name}}</mat-card-title>
+    <mat-card-subtitle [style.background]="powerbank.price >= 2000 ? 'white' : 'red'"
+      [style.color]="powerbank.price >= 2000 ? 'black' : 'white'" *ngIf="powerbank.price" class="price">
+      {{powerbank.price}} Ft
+    </mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image [src]="powerbank.img" [alt]="powerbank.description">
+  <mat-card-content>
+    <div>{{powerbank.description}}</div>
+  </mat-card-content>
+</mat-card>

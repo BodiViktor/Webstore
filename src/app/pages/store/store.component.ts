@@ -1,5 +1,7 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { ITEMS } from 'src/app/shared/database/item.database';
+import { CATEGORIES } from 'src/app/shared/database/category.database';
+import { CASES } from 'src/app/shared/database/case.database';
+import { POWERBANKS } from 'src/app/shared/database/powerbank.database';
 
 @Component({
   selector: 'app-store',
@@ -7,13 +9,15 @@ import { ITEMS } from 'src/app/shared/database/item.database';
   styleUrls: ['./store.component.scss']
 })
 export class StoreComponent implements OnInit, OnDestroy {
-  items = ITEMS;
+  categories = CATEGORIES;
+  cases = CASES;
+  powerbanks = POWERBANKS;
   category?= '';
-  page?= '';
+  page = 'store';
   constructor() { }
 
   ngOnInit(): void {
-    this.category = 'page'
+    this.category = 'case'
   }
   ngOnDestroy(): void {
     delete this.category;

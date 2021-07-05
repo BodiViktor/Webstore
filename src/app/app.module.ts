@@ -12,6 +12,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatInputModule } from '@angular/material/input';
+import { MatMenuModule } from '@angular/material/menu';
+
 import { StoreComponent } from './pages/store/store.component';
 import { ProductlistComponent } from './pages/store/productlist/productlist.component';
 import { ProductitemComponent } from './pages/store/productlist/productitem/productitem.component';
@@ -21,8 +23,10 @@ import { OnHoverDirective } from './shared/directives/on-hover/on-hover.directiv
 import { PhonecaseCardComponent } from './pages/phonecases/phonecase-card.component';
 import { PowerbankCardComponent } from './pages/powerbanks/powerbank-card.component';
 import { OthersCardComponent } from './pages/other-products/others-card.component';
-import { LoginComponent } from './pages/splash-screen/login/login.component';
-import { RegistrationComponent } from './pages/splash-screen/registration/registration.component';
+import { LoginComponent } from './pages/login/login.component';
+import { RegistrationComponent } from './pages/registration/registration.component';
+import { SplashScreenComponent } from './pages/splash-screen/splash-screen.component';
+import { MatRippleModule } from '@angular/material/core';
 
 
 @NgModule({
@@ -41,6 +45,7 @@ import { RegistrationComponent } from './pages/splash-screen/registration/regist
     OthersCardComponent,
     LoginComponent,
     RegistrationComponent,
+    SplashScreenComponent,
 
   ],
   imports: [
@@ -54,6 +59,8 @@ import { RegistrationComponent } from './pages/splash-screen/registration/regist
     MatButtonModule,
     MatCardModule,
     MatInputModule,
+    MatMenuModule,
+    MatRippleModule
   ],
   providers: [],
   bootstrap: [AppComponent]

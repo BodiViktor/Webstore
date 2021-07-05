@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Powerbank } from 'src/app/shared/models/powerbank.models';
 
 @Component({
   selector: 'app-powerbank-card',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./powerbank-card.component.scss']
 })
 export class PowerbankCardComponent implements OnInit {
-
+  @Input() powerbank?: Powerbank;
   constructor() { }
 
   ngOnInit(): void {

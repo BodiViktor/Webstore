@@ -1,16 +1,18 @@
 .container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   padding: 16px;
-  padding-left: 50px;
+
 }
 
-app-productlist {
+app-phonecase-card,
+app-powerbank-card {
   min-width: 300px;
   max-width: 300px;
   min-height: 300px;
   flex: 1;
   margin: 4px;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  cursor: pointer;
 }

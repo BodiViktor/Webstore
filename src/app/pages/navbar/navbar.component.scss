@@ -1,13 +1,12 @@
-.contaner-first-toolbar {
-  height: 4em;
-  background-color: rgb(0, 0, 0);
-  color: white;
+.splash-title,
+[mat-button] {
+  text-transform: capitalize;
 }
 
-.example-spacer {
-  flex: 1 1 auto;
+[mat-button]:not(:last-child) {
+  margin-right: 16px;
 }
 
-.example-form-field {
-  width: 40em;
+a[mat-button] {
+  font-size: x-large;
 }
