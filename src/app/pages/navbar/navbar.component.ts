@@ -1,19 +1,19 @@
-import { Component, ElementRef, Input, OnInit } from '@angular/core';
-import { Category } from 'src/app/shared/models/category.model';
+import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { CATEGORIES } from 'src/app/shared/database/category.database';
 
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.scss']
 })
-export class NavbarComponent implements OnInit {
-  sCategoryTitle?: string;
-  @Input() selectedCategory?: string;
-  @Input() categories: Category[] = [];
+export class NavbarComponent {
+  categories = CATEGORIES;
 
-  constructor() { }
+  constructor(private router: Router) { }
 
-  ngOnInit(): void {
+  logout() {
+    this.router.navigateByUrl('login')
   }
-  //value = '';
+
 }

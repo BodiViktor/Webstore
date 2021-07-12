@@ -1,6 +1,4 @@
 import { Component, Input, OnDestroy, OnInit } from '@angular/core';
-import { CASES } from 'src/app/shared/database/case.database';
-import { Case } from 'src/app/shared/models/case.model';
 
 @Component({
   selector: 'app-home',

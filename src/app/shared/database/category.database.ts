@@ -2,19 +2,25 @@ import { Category } from "../models/category.model";
 
 export const CATEGORIES: Category[] = [
   {
-    title: 'Phonecases',
-    icon: '',
+    title: 'phonecases',
     value: 'phonecases',
-    color: 'rgb(122,122,122,.2)'
+    color: 'rgb(122,122,122,.2)',
+    url: '/store/phonecases'
   }, {
-    title: 'Powerbanks',
-    icon: '',
+    title: 'powerbanks',
     value: 'powerbanks',
-    color: 'rgb(255, 0, 0,.2)'
+    color: 'rgb(255, 0, 0,.2)',
+    url: '/store/powerbanks'
   }, {
-    title: 'Other',
-    icon: '',
+    title: 'other',
     value: 'other',
-    color: 'rgb(0,0,128,.2)'
+    color: 'rgb(0,128,128,.2)',
+    url: '/store/other'
+  }
+  , {
+    title: 'Favorites',
+    value: 'favorites',
+    color: 'rgb(0,0,128,.2)',
+    url: '/store/favorites'
   }
 ];

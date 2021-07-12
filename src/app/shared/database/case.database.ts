@@ -7,7 +7,8 @@ export const CASES: Case[] = [
     price: 1000,
     description: 'Standard olcsó fekete tok',
     img: 'https://media.4rgos.it/s/Argos/3563025_R_SET?$Main768$&w=620&h=620',
-    cart: false
+    cart: false,
+    fav: false
   },
   {
     id: 'tok',
@@ -15,7 +16,9 @@ export const CASES: Case[] = [
     price: 2000,
     description: 'Standard drágább fekete tok',
     img: 'https://media.4rgos.it/s/Argos/3563025_R_SET?$Main768$&w=620&h=620',
-    cart: false
+    cart: false,
+    fav: false
+
   },
   {
     id: 'tok',
@@ -23,8 +26,7 @@ export const CASES: Case[] = [
     price: 3000,
     description: 'Standard legdrágább fekete tok',
     img: 'https://media.4rgos.it/s/Argos/3563025_R_SET?$Main768$&w=620&h=620',
-    cart: false
+    cart: false,
+    fav: false
   },
-  /*
-  }*/
 ];

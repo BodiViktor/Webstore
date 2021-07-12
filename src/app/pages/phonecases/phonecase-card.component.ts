@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Case } from 'src/app/shared/models/case.model';
 
 @Component({
@@ -7,12 +7,20 @@ import { Case } from 'src/app/shared/models/case.model';
   styleUrls: ['./phonecase-card.component.scss']
 })
 export class PhonecaseCardComponent implements OnInit {
-  @Input() case?: Case;
-  @Input() randcase?: Case;
+  @Input() case: Case = {} as any;
+  @Input() hasAction?: true;
+  @Output() callFav = new EventEmitter<Case>();
+  @Output() getCase = new EventEmitter<Case>();
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  toggleFavorite(event: any): void {
+    event.stopPropagation();
+    this.case.fav = !this.case.fav;
+    this.callFav.emit(this.case);
   }
 
 }

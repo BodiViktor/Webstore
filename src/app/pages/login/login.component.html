@@ -3,9 +3,9 @@
     <form>
       <h3>Login</h3>
       <br>
-      <div><button mat-button color="accent">REGISTRATION</button></div>
+      <div><button mat-button color="accent" (click)="navTo('/registration')">REGISTRATION</button></div>
       <br>
-      <div><button mat-raised-button color="primary" class="max-width">LOGIN</button></div>
+      <div><button mat-raised-button color="primary" class="max-width" (click)="login()">LOGIN</button></div>
     </form>
   </mat-card>
 </div>

@@ -5,4 +5,5 @@ export interface Case {
   description?: string;
   img?: String;
   cart?: boolean;
+  fav?: boolean;
 }

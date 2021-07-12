@@ -1,4 +1,4 @@
-<mat-card *ngIf="case">
+<mat-card *ngIf="case" (click)="getCase.emit(case)">
   <mat-card-header>
     <mat-card-title>{{case.name}}</mat-card-title>
     <mat-card-subtitle [style.background]="case.price >= 2000 ? 'white' : 'red'"
@@ -7,7 +7,20 @@
     </mat-card-subtitle>
   </mat-card-header>
   <img mat-card-image [src]="case.img" [alt]="case.description">
-  <mat-card-content>
-    <div>{{case.description}}</div>
+  <mat-card-content class="cart-holder">
+    <!-- <div>{{case.description}}</div> -->
   </mat-card-content>
+  <mat-card-actions>
+    <!--fxFlexAlign="end" align="end" -->
+    <button mat-button (click)="toggleFavorite($event)">
+      <mat-icon *ngIf="case.fav;else fav" style="color: #e91e63;">favorite</mat-icon>
+      <ng-template #fav>
+        <mat-icon>favorite_border</mat-icon>
+      </ng-template>
+    </button>
+    <!-- <button mat-raised-button style="box-shadow: 0px 0px 5px teal;" class="cart">
+      Add to Cart &nbsp;
+      <mat-icon>shopping_cart</mat-icon>
+    </button> -->
+  </mat-card-actions>
 </mat-card>
