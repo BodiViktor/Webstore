@@ -1,0 +1,29 @@
+<mat-card *ngIf="phonecase" (click)="getPhonecase.emit(phonecase)" appOnHover class="hide">
+  <img mat-card-image [src]="phonecase.img" [alt]="phonecase.description">
+  <mat-card-header>
+    <mat-card-title>{{phonecase.name}}
+      <button mat-button (click)="toggleFavorite($event)">
+        <mat-icon *ngIf="phonecase.fav;else fav" style="color: #e91e63;">favorite</mat-icon>
+        <ng-template #fav>
+          <mat-icon>favorite_border</mat-icon>
+        </ng-template>
+      </button>
+    </mat-card-title>
+    <mat-card-subtitle [style.background]="phonecase.price >= 2000 ? 'white' : 'red'"
+      [style.color]="phonecase.price >= 2000 ? 'black' : 'white'" *ngIf="phonecase.price" class="price">
+      {{phonecase.price}} Ft
+    </mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <!-- <div>{{case.description}}</div> -->
+  </mat-card-content>
+  <mat-card-actions>
+
+  </mat-card-actions>
+</mat-card>
+<div class="hoverWrapper">
+  <button mat-button class="hide-item">
+    Add to Cart &nbsp;
+    <mat-icon>shopping_cart</mat-icon>
+  </button>
+</div>

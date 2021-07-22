@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { SplashScreenComponent } from './splash-screen.component';
+import { DetailsComponent } from './details.component';
 
 const routes: Routes = [
   {
-    path: '',
-    component: SplashScreenComponent,
-    data: { title: "Main page - TITLE" }
+    path: ':dataNameStr/:id',
+    component: DetailsComponent,
+    data: { title: "Details - TITLE" }
   }
 ];
 
@@ -14,4 +14,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class SplashScreenRoutingModule { }
+export class DetailsRoutingModule { }

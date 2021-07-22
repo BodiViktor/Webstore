@@ -9,9 +9,10 @@ const routes: Routes = [
     component: StoreComponent,
     children: [
       { path: 'splash', loadChildren: () => import('./../splash-screen/splash-screen.module').then(m => m.SplashScreenModule) },
-      /*{ path: 'other-products', loadChildren: () => import('./../other-products/others-card.module').then(m => m.OthersCardModule) },
-      { path: 'phonecases', loadChildren: () => import('./../phonecases/phonecase-card.module').then(m => m.PhonecaseCardModule) },
-      { path: 'powerbanks', loadChildren: () => import('./../powerbanks/powerbank-card.module').then(m => m.PowerbankCardModule) },*/
+      { path: 'phonecases', loadChildren: () => import('./../phonecases/list/phonecase-list.module').then(m => m.PhonecaseListModule) },
+      { path: 'powerbanks', loadChildren: () => import('./../powerbanks/list/powerbank-list.module').then(m => m.PowerbankListModule) },
+
+      //{ path: 'other-products', loadChildren: () => import('./../other-products/others-card.module').then(m => m.OthersCardModule) },
     ]
   },
 ];

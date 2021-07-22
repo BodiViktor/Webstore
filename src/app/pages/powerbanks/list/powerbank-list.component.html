@@ -1,0 +1,11 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span>{{title}}</span>
+  </mat-toolbar-row>
+</mat-toolbar>
+<app-container classes="container-1 flex">
+  <app-powerbank-card class="item" *ngFor="let item of list | async" [powerbank]="item">
+    <!-- (getPowerbank)="onGetPowerbank($event)" -->
+  </app-powerbank-card>
+</app-container>
+<br>

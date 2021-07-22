@@ -8,5 +8,6 @@ import { CATEGORIES } from 'src/app/shared/database/category.database';
 })
 export class SplashScreenComponent {
   categories = CATEGORIES;
+
   constructor() { }
 }

@@ -7,10 +7,10 @@ import { Case } from 'src/app/shared/models/case.model';
   styleUrls: ['./phonecase-card.component.scss']
 })
 export class PhonecaseCardComponent implements OnInit {
-  @Input() case: Case = {} as any;
-  @Input() hasAction?: true;
+  @Input() phonecase: Case = {} as any;
+  @Input() hasAction = true;
   @Output() callFav = new EventEmitter<Case>();
-  @Output() getCase = new EventEmitter<Case>();
+  @Output() getPhonecase = new EventEmitter<Case>();
 
   constructor() { }
 
@@ -19,8 +19,8 @@ export class PhonecaseCardComponent implements OnInit {
 
   toggleFavorite(event: any): void {
     event.stopPropagation();
-    this.case.fav = !this.case.fav;
-    this.callFav.emit(this.case);
+    this.phonecase.fav = !this.phonecase.fav;
+    this.callFav.emit(this.phonecase);
   }
 
 }

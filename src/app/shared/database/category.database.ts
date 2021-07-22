@@ -17,10 +17,4 @@ export const CATEGORIES: Category[] = [
     color: 'rgb(0,128,128,.2)',
     url: '/store/other'
   }
-  , {
-    title: 'Favorites',
-    value: 'favorites',
-    color: 'rgb(0,0,128,.2)',
-    url: '/store/favorites'
-  }
 ];

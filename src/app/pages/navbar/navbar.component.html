@@ -1,7 +1,7 @@
 <mat-toolbar class="navbar" color="black">
   <mat-toolbar-row>
-    <a mat-button [routerLink]="['/']" routerLinkActive="router-link-active">
-      Webkert
+    <a mat-button [routerLink]="['/']">
+      TITLE
     </a>
     <button mat-button *ngFor="let item of categories" [routerLink]="[item.url]" routerLinkActive="active">
       {{item.title}}&nbsp;
@@ -11,7 +11,7 @@
     <button mat-button>
       <mat-icon>favorite</mat-icon>
     </button>
-    <button mat-button>
+    <button mat-button [routerLink]="['/cart']" routerLinkActive="router-link-active">
       <mat-icon>shopping_cart</mat-icon>
     </button>
     <button mat-button [matMenuTriggerFor]="menu">
@@ -20,9 +20,9 @@
     </button>
 
     <mat-menu #menu="matMenu">
-      <button mat-menu-item disabled>
+      <button mat-menu-item [routerLink]="['/account']">
         <mat-icon>account_circle</mat-icon>
-        <span>Profile</span>
+        <span>Account</span>
       </button>
       <button mat-menu-item disabled>
         <mat-icon>settings</mat-icon>
