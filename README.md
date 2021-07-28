@@ -1,3 +1,7 @@
+JELENLEG FEJLESZTÉS ALATT ÁLL 
+
+
+<!--
 FELHASZNÁLÓI FELÜLET:
 -navbar(logo, search bar, kosár, fiók)
 -item cards
@@ -9,3 +13,4 @@ ADMIN FELÜLET:
 -itemek feltöltése
 -kategória
 -felvétel
+-->
