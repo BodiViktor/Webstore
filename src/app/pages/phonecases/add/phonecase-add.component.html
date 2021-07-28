@@ -1,0 +1,20 @@
+<form [formGroup]="form">
+  <h3>Add phonecase</h3>
+  <mat-form-field class="max-width">
+    <mat-label>Name</mat-label>
+    <input matInput placeholder="Placeholder" focus formControlName="name" required>
+  </mat-form-field>
+  <mat-form-field class="max-width">
+    <mat-label>Image</mat-label>
+    <input matInput placeholder="https://www.example.com" type="text" focus formControlName="img">
+  </mat-form-field>
+  <mat-form-field class="max-width">
+    <mat-label>Price</mat-label>
+    <input matInput placeholder="1222" type="number" focus formControlName="price">
+  </mat-form-field>
+  <div style="display: flex; justify-content: flex-end;">
+    <button mat-button (click)="dialogRef.close()" class="margin-right">CANCEL</button>
+    <button mat-button [mat-dialog-close]="form.value" [disabled]="form.invalid">ADD</button>
+  </div>
+
+</form>
