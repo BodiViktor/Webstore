@@ -1,6 +1,14 @@
-<mat-toolbar color="primary">
-  <mat-toolbar-row>
-    <span>{{title}}</span>
+<mat-toolbar style="background-color:white;" color="black">
+  <mat-toolbar-row class="title-row">
+    <span class="title">{{title}}</span>
+    <!-- <div class="searchbar">
+      <input type="text" placeholder="Search" matInput [formControl]="myControl" [matAutocomplete]="auto">
+      <mat-autocomplete #auto="matAutocomplete">
+        <mat-option *ngFor="let option of filteredOptions$ | async" [value]="option">
+          {{option}}
+        </mat-option>
+      </mat-autocomplete>
+    </div> -->
   </mat-toolbar-row>
 </mat-toolbar>
 <app-container classes="container-1 flex">
