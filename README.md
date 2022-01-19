@@ -1,4 +1,4 @@
-JELENLEG FEJLESZTÉS ALATT ÁLL 
+WEBSTORE JELENLEG FEJLESZTÉS ALATT ÁLL 
 <!--
 FELHASZNÁLÓI FELÜLET:
 -navbar(logo, search bar, kosár, fiók)
